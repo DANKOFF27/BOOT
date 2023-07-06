@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+.carousel{
+    max-width: 900px;
+    margin: 50px auto;
+}
+.carousel-caption{
+
+}
+.carousel__inside{
+    width: 350px;
+    margin-bottom: 50px;
+}
+.carousel-control-prev-icon {
+    background-image: url(./img/lollol.png);
+}
+.carousel-control-next-icon {
+    background-image: url(./img/strelochkaa.png);
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 50px;
+    height: 3px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #ff0000;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+}
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 900px;
+    height: 500px;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+}
+.carousel-item:nth-child(1){
+    background-color: aquamarine;
+    border: 5px solid #ff0000;
+}
+.carousel-item:nth-child(2){
+    background-color: rgb(60, 255, 0);
+    border: 5px solid #5100ff;
+}
+.carousel-item:nth-child(3){
+    background-color: rgb(221, 255, 0);
+    border: 5px solid #00ffff;
+}
+.carousel-item:nth-child(4){
+    background-color: rgb(38, 0, 255);
+    border: 5px solid #ff00ff;
+}
